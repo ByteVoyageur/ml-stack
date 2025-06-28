@@ -1,0 +1,21 @@
+name: ml
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - ipykernel
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1      # 與驅動 570 / CUDA 12.8 相容
+  - pip
+  - pip:
+      - seaborn

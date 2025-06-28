@@ -1,0 +1,37 @@
+# ── Python ────────────────────
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# ── JupyterLab/Notebook ────────────
+.ipynb_checkpoints/
+
+
+# ── VS Code  ───────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Conda / venv ───────────────────
+.env/
+.venv/
+
+
+# ── Docker  ───────────────────
+docker-save-*.tar
+
+docker-compose.override.yml
+
+# ── Big files/ temp/ ... ───────────
+data/
+*.csv
+*.xls*
+*.hdf5
+*.pth
+*.pt
+*.npz
+
+# ── Syttem  ─────────────────────────
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+services:
+  lab:
+    build: .
+    image: ml-stack:latest
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - JUPYTER_TOKEN=letmein
+    volumes:
+      - ./notebooks:/workspace
+    ports:
+      - "8888:8888"
+    restart: unless-stopped
